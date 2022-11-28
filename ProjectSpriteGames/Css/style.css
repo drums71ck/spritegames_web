@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'KellySlab-Regular';
+    src: url('fuentes/KellySlab-Regular.ttf');
+    
+}
+.navbar-expand-sm {
+    background-color: #f35054;
+}
+#search{
+    margin-left: 20px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+a:visited {
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+#myTittle{
+    background-color: #292033;
+    color: white;
+    font-family: KellySlab-Regular;
+}
+.ContainerGames{
+    background-color: #6e5480;
+    padding-top: 2%;
+    min-height: 100vh;
+    
+}
+img{
+    height: 350px;
+    width: 200px;
+}
+a{
+    font-family: KellySlab-Regular;
+}
