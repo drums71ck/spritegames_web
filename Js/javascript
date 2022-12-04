@@ -1,7 +1,5 @@
 
 function playAudio(){
-   
-    
 
         let etiquetaAudio = document.createElement("audio")
         etiquetaAudio.setAttribute("src","Css/assets/ka-ching.mp3")
@@ -9,3 +7,6 @@ function playAudio(){
         etiquetaAudio.play()
     
 }
+
+
+
