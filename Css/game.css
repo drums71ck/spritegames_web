@@ -1,0 +1,41 @@
+#headerNav{
+    background-color: #292033;
+    
+}
+button{
+    border-radius: 10px;
+}
+body{
+    background-color: #6E5480;
+}
+
+#gameSquare{
+   
+    width: 80%;
+    height: 40rem;
+    background: #292033;
+}
+iframe{
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+    
+}
+hr{
+    margin-left: 10%;
+    background-color: red;
+    
+}
+img{ height: 100px; width: 100px;}
+
+#text{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 8px;
+
+    color: aliceblue;
+}
+#vr{
+    width: 1px;  
+    background-color: red;
+}

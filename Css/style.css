@@ -41,3 +41,9 @@ img{
 a{
     font-family: KellySlab-Regular;
 }
+#searchBtn{
+    background-color: transparent;
+    border: none;
+    width: 57px;
+    height: 55px;
+}

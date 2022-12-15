@@ -9,6 +9,11 @@ body{
 a:link, a:visited, a:active {
     text-decoration:none;
 }
+img{
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+}
 h1{
     font-family: 'Inter';
     text-align: center;

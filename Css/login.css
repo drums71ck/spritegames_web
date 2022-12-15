@@ -7,6 +7,12 @@ body{
     
     background-repeat: no-repeat;
 }  
+img{
+    position: absolute;
+    margin-bottom: 20px; 
+    height: 50px;
+    width: 100px;
+}
 
 h1{
     font-family: 'Inter';
@@ -56,9 +62,12 @@ button{
     color: #FFFFFF;
    
 }
+
 @media only screen and (max-width: 500px) {
    
-    
+    html{
+        background-color: #292033;
+    }
     h1{
         position: absolute;
         margin-left: 25%;
@@ -72,15 +81,7 @@ button{
         color: #FFFFFF;
 
     }
-    #Rectangle5{
-        position: absolute;
-        width: 101%;
-        height: 100%;
-        
-      
-        background: #292033;
-        
-    }
+ 
     
     #Rectangle6{
         position: absolute;
@@ -98,16 +99,21 @@ button{
   
     body{
         background-image: none;
+        background-color: #292033;
     }
 
-
+    img{
+        background-color: #292033;
+       width: 30px;
+       height: 30px;
+    }
    
 
     #Rectangle3{
         position: absolute;
         width: 30%;
         height: 50%;
-        left: 315px;
+        left: 78%;
         top: 105px;
 
         background: #6E5480;
@@ -129,8 +135,8 @@ button{
         margin-top: 30px;
         position: absolute;
         width: 110%;
-        height: 422px;
-        left: calc(50% - 400px/2 + 5.5px);
+        height: 100%;
+     
         top: calc(50% - 422px/2 + 219px);
 
         background: #6E5480;
