@@ -11,14 +11,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="Css/game.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="Js/javascript.js"></script>
 </head>
 <body>
     <!-- navbar with 2 buttons and searcher -->
   <header>
     <nav class="navbar niavbar-light bg-lght" id="headerNav">
       <form class="container-fluid justify-content-start">
-        <button class="btn btn-outline-danger me-2 ms-md-5" id="btnLog" type="button" style="border-radius: 10px;">Log In</button>
-        <button class="btn btn-outline-danger me-2 ms-md-5" id="btnSign" type="button" style="border-radius: 10px;">Sign Up</button>
+        <button class="btn btn-outline-danger me-2 ms-md-5" id="btnLog" type="button" style="border-radius: 10px;" onclick="moveLog()">Log In</button>
+        <button class="btn btn-outline-danger me-2 ms-md-5" id="btnSign" type="button" style="border-radius: 10px;" onclick="moveIndex()">Sign Up</button>
         <p id="userLog"></p>
           <div class="input-group rounded ms-auto p-2" style="width: 300px;">
             <input type="search" class="form-control rounded d-flex justify-content-end" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
@@ -31,8 +32,14 @@
     <script>
       $(document).ready(function(){
         let username = localStorage.getItem('username')
-        console.log(username)
-        $('#userLog').prepend(`<p class="my-2 ms-2" style="color: white;">Hi again 😎, ${username}</p>`)
+        if (username == null){
+          $('#userLog').hide();
+        }else{
+          $('#userLog').prepend(`<p class="my-2 ms-2" style="color: white;">Hi again 😎, ${username}</p>`)
+          var logOut = document.getElementById('btnLog');
+          logOut.innerHTML='Log out'
+        }
+        
       });
     </script>
   </header>
@@ -51,19 +58,19 @@
     <div class="row">
       <div class="col-sm">
         <h2>About the creator</h2>
-        <img src="https://w0.peakpx.com/wallpaper/4/522/HD-wallpaper-half-life-alyx-g-man-art.jpg">
-        <p id="text">I made the best game ever, should be <br>nominated to GOTY and winner</p>
+        <img src="https://pbs.twimg.com/media/FAe_czuWQAcq9MV?format=png&name=small">
+        <p id="text">I made my first game in unity, i hope you like my game</p>
       </div>
       <div class="col-md-1" id="vr"></div>
       <div class="col-sm">
         <h2>Description</h2>
-        <p id="text">y po ypo popopopop</p>
+        <p id="text">Can u repair the broken<br>can u see dar<br>can u feel, can u feel my heart</p>
       </div>
     </div>
   </div>
   <hr size="6px" width="80%">
   
-  
+  <!--http://personal.denison.edu/~lalla/314s19/john/index.html-->
    
 </body>  
 

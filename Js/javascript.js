@@ -69,5 +69,9 @@ function login(){
 
 
 }
+function moveIndex(){location.href='register.html'}
+
+function moveLog(){location.href='login.html'}
+
 
 

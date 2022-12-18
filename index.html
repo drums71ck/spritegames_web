@@ -60,11 +60,16 @@
             </li>
             <!-- Poner el usuario logeado o registrado-->
             <script>
-              $(document).ready(function(){
-                let username = localStorage.getItem('username')
-                console.log(username)
-                $('#userLog').prepend(`<p class="my-2 ms-2">Welcome ${username}</p>`)
-              });
+               $(document).ready(function(){
+                  let username = localStorage.getItem('username')
+                  if (username == null){
+                    $('#userLog').hide();
+
+                  }else{
+                    $('#userLog').prepend(`<p class="my-2 ms-2" style="color: white;">Welcome 👻, ${username}</p>`)
+                  }
+                  
+                });
             </script>             
           </ul>
         </div>
@@ -98,8 +103,8 @@
           </a>
         </div>
         <div class="col-lg-3 col-md-4 col-6" >
-          <a href="#" class="d-block mb-4 ">
-            <img class="img-fluid img-thumbnail" src="https://tr.rbxcdn.com/bb92da2b658f8e14afb216e66eba2508/150/150/Image/Png" alt="" data-mdb-animation-start="onLoad">
+          <a href="game3.html" class="d-block mb-4 ">
+            <img class="img-fluid img-thumbnail" src="https://tr.rbxcdn.com/4407ea24f9f368b5aed1aeb56e64b31a/150/150/Image/Png" alt="" data-mdb-animation-start="onLoad">
           </a>
         </div>
         <div class="col-lg-3 col-md-4 col-6">
