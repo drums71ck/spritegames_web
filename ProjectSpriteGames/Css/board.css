@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Inter;
+    src: url(fuentes/Inter-Regular.ttf);
+}
+body{
+    background-color: #292033;
+}
+canvas{
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+h1{
+    color: #f0f0f0;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 700;
+    line-height: 17px;
+
+}
