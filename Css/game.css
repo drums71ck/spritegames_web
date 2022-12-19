@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Inter;
+    src: url(fuentes/Inter-Regular.ttf);
+}
 #headerNav{
     background-color: #292033;
     
@@ -38,4 +42,23 @@ img{ height: 100px; width: 100px;}
 #vr{
     width: 1px;  
     background-color: red;
+}
+#galerySkin img{
+    width: 474px;
+}
+#creatorSprites{
+    
+    align-items: center;
+    margin-top: 20px;
+    background-color: #292033;
+    height: 90px;
+    width: 300px;
+    color: aliceblue;
+    border-radius: 0px;
+    margin-bottom: 2%;
+    font-family: 'Inter';
+    font-style: italic;
+    font-size: xx-large;
+    
+   
 }
